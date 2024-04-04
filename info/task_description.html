@@ -1,18 +1,20 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+     A busca binária é um método eficaz que emprega a estratégia de divisão e conquista para encontrar rapidamente um elemento em uma lista ordenada, reduzindo significativamente o espaço de busca pela metade a cada passo. Esta técnica não apenas exemplifica a eficiência algorítmica em resolver problemas de busca, mas também destaca a importância de entender conceitos fundamentais de ciência da computação, como algoritmos de divisão e conquista, que são cruciais para otimização e resolução de problemas complexos de maneira mais intuitiva. O objetivo deste exercício é implementar a busca binária de forma que retorne o índice do elemento buscado na lista (ou -1 se não estiver presente) e o número de passos realizados, fornecendo uma visão clara do processo de divisão e conquista em ação.</p><img  title="example" src="{{MEDIA}}insertionsort.png" alt="example" style="max-height: 300px"/><p> Na imagem acima, você encontra uma ilustração do algoritmo em funcionamento.
+
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma lista de inteiros ordenada e um inteiro a ser buscado na lista.
+
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Uma lista contendo dois elementos: o índice do elemento na lista e o número de passos necessários para encontrar o elemento ou concluir sua ausência.
 </p>
 
 
@@ -28,7 +30,9 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    assert busca_binaria([1, 2, 3, 4, 5], 3) >> (2, 1)
+assert busca_binaria([1, 2, 3, 4, 5], 6) >> (-1, 3)
+assert busca_binaria([1, 3, 4, 5, 7, 8, 9], 5) >> (3, 1)
 </pre>
 {% endif %}
 </div>
