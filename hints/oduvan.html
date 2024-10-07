@@ -2,24 +2,26 @@
  <div class="question-answer">
   <div class="question">
    <p>
-    1
+    Como posso reduzir o espaço da busca a cada iteração?
    </p>
   </div>
   <div class="answer">
    <p>
-    2
+    Na busca binária, três variáveis limitam o espaço de busca: baixo, alto, e meio. A lista é dividida ao meio em cada iteração. Se o valor no índice meio for igual ao valor buscado, ele é retornado. Caso contrário, o algoritmo ajusta os limites:
+    <ul><li>Se o valor buscado for menor que o valor em meio, o novo limite superior (alto) será meio - 1.</li>
+<li>Se for maior, o limite inferior (baixo) será meio + 1.</li></ul>
    </p>
   </div>
  </div>
  <div class="question-answer">
   <div class="question">
    <p>
-    3
+    Qual o principal cuidado que devo ter?
    </p>
   </div>
   <div class="answer">
    <p>
-    4
+    Lembre-se de que as variáveis baixo, alto, e meio se referem aos índices da lista, não aos valores. Isso significa que, ao ajustar os limites de busca, você está movendo a posição dos índices e não os valores diretamente. Sempre use as variáveis para acessar os valores correspondentes na lista, como lista[meio] para comparar o valor atual no meio. Isso ajuda a evitar confusão entre os números usados como limites e os valores reais dentro da lista.
    </p>
   </div>
  </div>
